@@ -1,0 +1,56 @@
+    1. Difference between Abstarct Class and Interface
+
+1. Interface have only abstract methods. 
+An abstract class have both abstract and non-abstract methods
+
+2. A Java interface can be implemented using the keyword "implements" 
+and an abstract class can be extended using the keyword "extends".
+
+3. Members of a interface are public by default. 
+And abstract class can have class members like private, protected.
+
+
+    2. Method Overriding and Method Overloading
+
+1. Overriding occurs when two methods have the same method name and parameters. 
+   Overriding is known as runtime polymorphism​.
+
+2. Overloading occurs when two or more methods in one class have the same method name but different parameters.
+   Overloading is known as compile-time polymorphism.
+
+
+    3. Difference between method and Constructor 
+Constructor is used to initialize the object or instance of class and have same name as class name 
+a method is used to perform specific task or functionality and method can have any valid name
+
+    4. CallByRef and CallByValue
+While calling a function, we pass values of variables to it are known as "Call By Values".
+
+While calling a function, instead of passing the values of variables, we pass address of variables to the function known as "Call By References".
+
+   5. 10 letter random string
+
+   public class RandomString {
+	
+		public static void main(String[] args) {
+			
+			RandomString random = new RandomString();
+			String letters = "abcdefghijklmnopqr...";
+
+			for(int i = 0; i <10;i++) {
+
+				 int index = (int)(letters.length()* Math.random());
+				 random.append(letters.charAt(index));
+				 System.out.println(RandomString .getAlphaNumericString(letters));
+			}
+		}
+
+
+   6. How String manage its memory
+
+  Whenever you create a string object using string literal, that object is stored in the string constant pool 
+and whenever you create a string object using new keyword, such object is stored in the heap memory. 
+
+For Ex - String s1 = "abc"; 
+ 
+String s2 = "xyz";
